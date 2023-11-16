@@ -1,7 +1,7 @@
 /*
  * @Author: zhangyu
  * @Date: 2023-10-17 16:37:09
- * @LastEditTime: 2023-11-14 17:19:49
+ * @LastEditTime: 2023-11-15 18:24:09
  */
 type LEVELS = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'fatal'
 declare module 'think-ts-lib' {
@@ -24,6 +24,7 @@ declare module 'think-ts-lib' {
         Log4j(str: string, level?: LEVELS): void
         Utils: any
         M(modelPath: string): any
+        Db(tableName?: string, db?: string): any
     }
     export const ShowSuccess: (data?: any, msg?: string, code?: number, statusCode?: number) => Object
     export const ApiException: (msg?: string, errorCode?: number, statusCode?: number) => void
@@ -32,4 +33,5 @@ declare module 'think-ts-lib' {
     export const Log4j: (str: string, level?: LEVELS) => void
     export const Utils: any
     export const M: (modelPath: string) => any
+    export const Db: (tableName?: string, db?: string) => any
 }
