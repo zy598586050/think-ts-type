@@ -1,5 +1,5 @@
 {
-  "name": "think-ts-lib-types",
+  "name": "think-ts-types",
   "version": "1.0.0",
   "description": "TypeScript definitions for think-ts-lib",
   "types": "index.d.ts",
