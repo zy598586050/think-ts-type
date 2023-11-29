@@ -1,8 +1,12 @@
 {
-  "name": "think-ts-types",
+  "name": "@types/think-ts-lib",
   "version": "1.0.0",
   "description": "TypeScript definitions for think-ts-lib",
   "types": "index.d.ts",
+  "files": ["index.d.ts"],
   "author": "zhangyu",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
 }
